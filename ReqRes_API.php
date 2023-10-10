@@ -1,5 +1,5 @@
 <?php
-//Task 1
+//Task 1 Create User using POST
 $url = "https://reqres.in/api/users";
 $data = array(
     "name" => "morpheus",
@@ -25,7 +25,7 @@ if ($response === FALSE) {
     echo "<pre>" . $formatted_response . "</pre>";
 }
 
-//Task 2
+//Task 2 fetch result and show
 $url = "https://reqres.in/api/users/10";
 $response = file_get_contents($url);
 
@@ -37,7 +37,7 @@ if ($response === FALSE) {
     echo "<pre>" . $formatted_response . "</pre>";
 }
 
-//Task 3
+//Task 3 List All the users
 $url = "https://reqres.in/api/users?page=2";
 $response = file_get_contents($url);
 
